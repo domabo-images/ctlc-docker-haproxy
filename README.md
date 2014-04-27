@@ -15,3 +15,9 @@ Load the HAProxy image
 ------------------------
 
 	ID=$(sudo docker.io run -d -p 80 domabo/haproxy /run.sh)
+	
+Interactive test:
+
+	sudo docker.io run -i -t --rm --link etcd:etcd domabo/haproxy /bin/bash
+	
+
