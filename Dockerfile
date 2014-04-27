@@ -1,7 +1,7 @@
-FROM ubuntu:quantal
-MAINTAINER Lucas Carlson <lucas@rufy.com>
+FROM ubuntu
+MAINTAINER Domabo <admin@domabo.com>
 
-# Let's get haproxy
+# haproxy
 RUN apt-get update -q
 RUN apt-get install -y haproxy
 
